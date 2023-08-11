@@ -1,0 +1,90 @@
+/* General rules */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    
+}
+
+span {
+    font-size: 4rem;
+}
+
+.text-container {
+    max-width: 600px;
+    
+}
+
+.photo-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 30px 50px;
+}
+
+.photo-container img {
+    width: 100%;
+    
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.flex {
+    display: flex;
+}
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5px;
+    /*font-size: 1.3rem;*/
+}
+.name {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    
+}
+
+/* Section About me */
+
+#about-me {
+    justify-content: space-between;
+}
+
+/* section Skills */
+
+.skills-container {
+
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* section Projects */
+
+/* section Contacts */
+
+/* footer */
