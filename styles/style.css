@@ -7,21 +7,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
-p {
+.text-container  {
     letter-spacing: 0.5px;
     line-height: 1.5;
     
 }
 
-span {
-    font-size: 4rem;
-}
-
 .text-container {
     max-width: 600px;
-    
 }
 
 .photo-container {
@@ -33,8 +29,7 @@ span {
 }
 
 .photo-container img {
-    width: 100%;
-    
+    width: 100%;  
 }
 
 blockquote {
@@ -43,6 +38,10 @@ blockquote {
 
 .flex {
     display: flex;
+}
+
+.hide {
+    display: none;
 }
 /* header */
 
@@ -81,6 +80,10 @@ nav a {
     width: 50%;
     margin: auto;
     justify-content: space-between;
+}
+
+.skills-container .fab  {
+    font-size: 4rem;
 }
 
 /* section Projects */
