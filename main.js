@@ -40,6 +40,11 @@ displayAgeProgramming();
 
 
 
+/* Функция вызова сообщения о разработке раздела Проекты */ 
+function showAlert() {
+    alert('Сорри, этот раздел находится в разработке');
+}
 
-
+const alertLink = document.getElementById('alert');
+alertLink.addEventListener('click', showAlert);
 
