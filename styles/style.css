@@ -1,115 +1,73 @@
-/* General rules */
-
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    color: rgb(234, 224, 224);
     max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    margin: 50px auto;
 }
 
-.text-container  {
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-    
+h1, h2, h3 {
+    color: rgb(255, 255, 255);;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
-.text-container {
-    max-width: 600px;
-}
-
-.photo-container {
-    width: 400;
-    height: 400px;
-    border-radius: 30px;
-    overflow: hidden;
-    margin: 30px 50px;
-}
-
-.photo-container img {
-    width: 100%;  
-    
-}
-
-blockquote {
-    font-style: italic;
-}
-
-.flex {
-    display: flex;
-}
-
-.hide {
-    display: none;
-}
-/* header */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 5px;
-    /*font-size: 1.3rem;*/
-}
-.name {
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: uppercase;
-}
-
-nav li {
-    list-style-type: none;
-    margin: 10px;
-}
-
-nav a {
+a {
+    color: rgb(163, 163, 241);
     text-decoration: none;
-    
 }
 
-/* Section About me */
 
-#about-me {
-    justify-content: space-between;
+
+main {
+    display: flex; 
+    border-bottom: solid 1px wheat;
+    padding-bottom: 50px;
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
 }
 
-.social-media {
-    justify-content: space-evenly;
+#aboutme {   
+    padding-left: 50px;
+
 }
 
-.social-media .fab {
-    font-size: 2rem;
-    padding: auto;
+#avatar {
+    width: 600px;
+    height: 600px;
+    border: solid 1px #ffffff;
+    display: flex;
+    align-items: flex-end;
 }
 
-.social-media  span {
-    transition: font-size 0.2s ease-out;
+#avatar img {
+    height: auto;
+    max-height: 100%;
 }
 
-.social-media  span:hover {
-    font-size: 3rem;
+ul.me {
+    list-style-type: '- ' ;
+}
+ul.lang {
+    list-style: '* ';
 }
 
-/* section Skills */
-
-.skills-container {
-
-    width: 50%;
-    margin: 50px auto;
-    justify-content: space-between;
+#contacts {
+    display: flex; 
+    justify-content: space-between;  
+    margin: 25px;
 }
 
-.skills-container .fab  {
-    font-size: 4rem;
+.message, .social {
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
-
-/* section Projects */
-
-/* section Contacts */
-
-/* footer */
-footer {
-    margin: 50px auto;
+#contacts img {
+    transition: transform 0.2s ease-out;
+}
+#contacts img:hover {
+    transform: scale(1.5);
     
 }

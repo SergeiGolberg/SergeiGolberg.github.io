@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Portfolio</title>
+        <link href="./styles/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <header>
+            <h1 class="name">Сергей Гольберг</h1>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#about-me">Обо мне</a></li>
+                    <li><a href="#projects" id="alert">Проекты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about-me" class="flex">
+                <div class="text-container">
+                    <h2>Немного обо мне и этой страничке</h2>
+                    <p>
+                        Привет!<br>
+                        Я - Сергей, начинающий фронтенд-разработчик. мне <span id="SergeiAge">JS-FUNCTION</span> года, 
+                        родился в городе Калининград.
+                        Я работал в ресторанах 
+                        на позициях от повара-заготовщика до шеф-повара ресторанов 
+                        итальянской и веганской кухни, менеджером по продажам корпусной мебели,
+                        занимался бухгалтерией и развитием точек общепита. <br>
+                        Имею опыт организации андеграундных музыкальных концертов
+                        и благотворительных футбольных турниров.
+                    </p>
+                    <p>
+                        Вместе с семьей переехал осенью 2022 года в Тбилиси 
+                        и начал учиться писать код. Я пишу код уже <span id="programmingAge">JS-FUNCTION</span>!<br><br>
+
+                        Обучался я благодаря книгам <a href="https://wickedlysmart.com/books/" target="_blank">wickedlysmart:</a>
+                        <ul>
+                            <li>-Head First HTML & CSS;</li>
+                            <li>-Head First JavaScript Programming;</li>
+                        </ul><br>
+
+                        А так же на платформе <a href="https://www.codecademy.com/" target="_blank">Codecademy</a><br>
+                        Сертификаты с пройденных курсов этого ресурса 
+                        (и не только, буду добавлять) можно увидеть <a href="#">тут.</a><br><br>
+
+                        Мой родной язык: русский.<br>
+                        Английский: А2 <em>(занимаюсь с репетирором).</em><br><br>
+
+                        На данный момент нахожусь в поиске работы
+                    </p>
+                    
+                    <p></p> <!-- об опыте -->
+                </div>
+                <div class="container-with-photo">
+                    <div class="photo-container">
+                        <img src="./images/photo_2021-07-11_01-33-54.jpg" alt="Sergei Golberg">
+                    </div>
+                    <div class="social-media flex">
+                        <a href="https://www.instagram.com/serega_golberg/" alt="instagram" target="_blank">
+                            <span class="fab fa-brands fa-instagram" style="color: darkblue"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sergei-golberg-83ab1a258/" alt="linkedin" target="_blank">
+                            <span class="fab fa-brands fa-linkedin" style="color: darkblue"></span>
+                        </a>
+                        <a href="https://github.com/SergeiGolberg" alt="GitHub" target="_blank">
+                            <span class="fab fa-brands fa-github" style="color: darkblue"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="skills-container flex">
+                    <span class="fab fa-html5"></span>
+                    <span class="fab fa-css3-alt"></span>
+                    <span class="fab fa-brands fa-js"></span>
+                    <span class="fab fa-react"></span>
+                    <span class="fab fa-github"></span>
+                    
+                </div>
+            </section>
+            
+            <section id="projects" class="hide">
+
+            </section>
+
+           <section id="contacts" class="hide">
+            
+           </section>
+        </main>
+        <footer>
+            <p>Made with love <span class="heart">❤</span> in Tbilisi</p>
+        </footer>
+    </body>
+    <script src="main.js"></script>
+</html>

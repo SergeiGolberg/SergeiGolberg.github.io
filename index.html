@@ -1,100 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <title>Portfolio</title>
-        <link href="./styles/style.css" rel="stylesheet" />
+        <meta charset="utf-8">
+        <title>Sergei Golberg</title>
+        <link href="styles/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1 class="name">Сергей Гольберг</h1>
-            <nav>
-                <ul class="flex">
-                    <li><a href="#about-me">Обо мне</a></li>
-                    <li><a href="#projects" id="alert">Проекты</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="about-me" class="flex">
-                <div class="text-container">
-                    <h2>Немного обо мне и этой страничке</h2>
-                    <p>
-                        Привет!<br>
-                        Я - Сергей, начинающий фронтенд-разработчик. мне <span id="SergeiAge">JS-FUNCTION</span> года, 
-                        родился в городе Калининград.
-                        Я работал в ресторанах 
-                        на позициях от повара-заготовщика до шеф-повара ресторанов 
-                        итальянской и веганской кухни, менеджером по продажам корпусной мебели,
-                        занимался бухгалтерией и развитием точек общепита. <br>
-                        Имею опыт организации андеграундных музыкальных концертов
-                        и благотворительных футбольных турниров.
-                    </p>
-                    <p>
-                        Вместе с семьей переехал осенью 2022 года в Тбилиси 
-                        и начал учиться писать код. Я пишу код уже <span id="programmingAge">JS-FUNCTION</span>!<br><br>
-
-                        Обучался я благодаря книгам <a href="https://wickedlysmart.com/books/" target="_blank">wickedlysmart:</a>
-                        <ul>
-                            <li>-Head First HTML & CSS;</li>
-                            <li>-Head First JavaScript Programming;</li>
-                        </ul><br>
-
-                        А так же на платформе <a href="https://www.codecademy.com/" target="_blank">Codecademy</a><br>
-                        Сертификаты с пройденных курсов этого ресурса 
-                        (и не только, буду добавлять) можно увидеть <a href="#">тут.</a><br><br>
-
-                        Мой родной язык: русский.<br>
-                        Английский: А2 <em>(занимаюсь с репетирором).</em><br><br>
-
-                        На данный момент нахожусь в поиске работы
-                    </p>
-                    
-                    <p></p> <!-- об опыте -->
-                </div>
-                <div class="container-with-photo">
-                    <div class="photo-container">
-                        <img src="./images/photo_2021-07-11_01-33-54.jpg" alt="Sergei Golberg">
-                    </div>
-                    <div class="social-media flex">
-                        <a href="https://www.instagram.com/serega_golberg/" alt="instagram" target="_blank">
-                            <span class="fab fa-brands fa-instagram" style="color: darkblue"></span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/sergei-golberg-83ab1a258/" alt="linkedin" target="_blank">
-                            <span class="fab fa-brands fa-linkedin" style="color: darkblue"></span>
-                        </a>
-                        <a href="https://github.com/SergeiGolberg" alt="GitHub" target="_blank">
-                            <span class="fab fa-brands fa-github" style="color: darkblue"></span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills">
-                <div class="skills-container flex">
-                    <span class="fab fa-html5"></span>
-                    <span class="fab fa-css3-alt"></span>
-                    <span class="fab fa-brands fa-js"></span>
-                    <span class="fab fa-react"></span>
-                    <span class="fab fa-github"></span>
-                    
-                </div>
-            </section>
-            
-            <section id="projects" class="hide">
-
-            </section>
-
-           <section id="contacts" class="hide">
-            
-           </section>
+        <main>            
+            <div id="avatar">
+                 <img src="images/photo_2021-07-11_01-33-54-transformed 4.png" alt="avatar">
+            </div>
+            <div id="aboutme">
+                <h1>SERGEI GOLBERG</h1>
+                <p>
+                    Hi! my name is Sergei, I'm Frontend Developer.<br>
+                    Here is some information about myself:
+                    <ul class="me">
+                        <li>Age: 34;</li>
+                        <li>Born: Kaliningrad, Russia;</li>
+                        <li>Now I live: Tbilisi, Georgia;</li>
+                        <li>Languages:
+                            <ul class="lang">
+                                <li> Russian: Native;</li>
+                                <li> English: B1.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <h2>Education</h2>
+                <p>
+                    I started learning code using books <a href="https://wickedlysmart.com/books/" target="_blank">wickedlysmart:</a>
+                    <ul>
+                        <li>Head First HTML & CSS;</li>
+                        <li>Head First JavaScript Programming;</li>
+                    </ul>
+                    I also use the <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> to learn more about code.<br>
+                    I have obtained several certificates from completing courses on this platform.
+                </p>
+            </div>
         </main>
-        <footer>
-            <p>Made with love <span class="heart">❤</span> in Tbilisi</p>
-        </footer>
+        <div id="contacts">
+            <div class="message">
+                <p>you can whrite me:</p>
+                <a href="mailto:golberg.sergei@gmail.com" target="_blank">
+                    <img src='/images/icons/icons8-почта-48.png'>
+                </a>
+                <a href="https://t.me/SergeiGolberg" target="_blank">
+                    <img src='/images/icons/icons8-телеграмма-60.png'>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/serega_golberg/" target="_blank">
+                    <img src='/images/icons/icons8-instagram-50.png' alt="instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/sergei-golberg-83ab1a258/" target="_blank">
+                    <img src='/images/icons/icons8-линкедин-50.png' alt="linkedin">
+                </a>
+                <a href="https://github.com/SergeiGolberg" target="_blank">
+                    <img src='/images/icons/icons8-github-50.png' alt="GitHub" >
+                </a>
+            </div>
+        </div>
     </body>
-    <script src="main.js"></script>
-</html>
+    </html>
