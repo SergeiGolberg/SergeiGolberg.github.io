@@ -13,6 +13,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <button id="btn-style">Change the style</button>
+        </header>
         <main>            
             <div id="avatar">
                  <img src="images/mainphoto1.png" id="avatar-img" alt="avatar">
@@ -23,7 +26,7 @@
                     Hi! my name is Sergei, I'm Frontend Developer.<br>
                     Here is some information about myself:
                     <ul class="me">
-                        <li>Age: 34;</li>
+                        <li id="age"></li>
                         <li>Born: Kaliningrad, Russia;</li>
                         <li>Now I live: Tbilisi, Georgia;</li>
                         <li>Languages:
@@ -41,6 +44,8 @@
                         <li>Head First HTML & CSS;</li>
                         <li>Head First JavaScript Programming;</li>
                     </ul>
+                </p>
+                <p>
                     I also use the <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> to learn more about code.<br>
                     I have obtained several certificates from completing courses on this platform.
                 </p>
@@ -48,7 +53,7 @@
         </main>
         <div id="contacts">
             <div class="message">
-                <p>you can whrite me:</p>
+                <span>you can whrite me:</span>
                 <a href="mailto:golberg.sergei@gmail.com" target="_blank">
                     <img src='/images/icons/icons8-почта-48.png'>
                 </a>

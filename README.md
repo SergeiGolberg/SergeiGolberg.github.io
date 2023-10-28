@@ -1,4 +1,4 @@
 # Sergei Golberg
-## Junior Frontend Developer
+## Frontend Developer
 
-This repository has maid for practice to writting code 
+About me
