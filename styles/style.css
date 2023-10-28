@@ -22,7 +22,6 @@ a {
 main {
     display: flex; 
     border-bottom: solid 1px wheat;
-    padding-bottom: 50px;
     width: 100%;
     justify-content: center; 
     align-items: center;
@@ -36,9 +35,9 @@ main {
 #avatar {
     width: 600px;
     height: 600px;
-    border: solid 1px #ffffff;
     display: flex;
     align-items: flex-end;
+    
 }
 
 #avatar img {
@@ -48,9 +47,14 @@ main {
 
 ul.me {
     list-style-type: '- ' ;
+    margin-left: -30px;
 }
 ul.lang {
     list-style: '* ';
+    margin-left: -25px;
+}
+ul.books {
+    margin-left: -25px;
 }
 
 #contacts {
