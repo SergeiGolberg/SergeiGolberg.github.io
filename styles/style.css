@@ -1,7 +1,6 @@
 /* base */
 
 body {
-    
     background-color: black;
     font-family: 'Inter', sans-serif;
     color: rgb(234, 224, 224);
@@ -109,7 +108,6 @@ ul.books {
 @media only screen and (max-width: 650px) {
 
     body {
-        width: 80%;
         margin:auto 10px;
     }
     header {
@@ -133,14 +131,15 @@ ul.books {
         box-shadow: none;
     }
     #avatar {
-        width: 80%;
+        width: 60%;
         max-width: auto;
         max-height: 300px;
         margin: 0 auto;
     }
     #avatar img {
+        width: 100%;
         height: auto;
-        max-height: 100%;
+        
     }
 
     #contacts {
