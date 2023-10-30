@@ -1,3 +1,5 @@
+/* base */
+
 body {
     position: relative;
     background-color: black;
@@ -18,6 +20,8 @@ a {
     text-decoration: none;
 }
 
+/* section */
+
 header {
     position: absolute;
     right: 10px;
@@ -26,7 +30,6 @@ header {
 
 main {
     display: flex; 
-    /* border-bottom: solid 1px wheat; */
     width: 100%;
     justify-content: center; 
     align-items: center;
@@ -34,16 +37,30 @@ main {
 
 #aboutme {   
     padding-left: 50px;
-    
 }
+
+.message, .social {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+ /* other */ 
 
 #btn-style {
     font-size: 12px;
     font-weight: bold;
+    background-color: rgb(163, 163, 241);
     padding: 8px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgb(163, 163, 241);
-    
+}
+
+#btn-style:hover {
+    background-color: rgb(103, 103, 100);
+    box-shadow: 5px 5px 5px rgb(103, 103, 100);
+    transition: all 0.2s ease-out;
 }
 
 #avatar {
@@ -51,16 +68,32 @@ main {
     height: 600px;
     display: flex;
     align-items: flex-end;
-    border-bottom: solid 1px wheat;
-    border-left: solid 1px wheat;
+    border-bottom: solid 1px rgb(103, 103, 100);
+    border-left: solid 1px rgb(103, 103, 100);
 }
 
 #avatar img {
     height: auto;
     max-height: 100%;
-    
 }
 
+#contacts {
+    display: flex; 
+    justify-content: space-between;  
+    margin: 25px;
+    padding: 10px;
+}
+
+#contacts img {
+    transition: transform 0.2s ease-out;
+}
+
+#contacts img:hover {
+    transform: scale(1.5);
+}
+
+/* lists 
+*/
 ul.me {
     list-style-type: '- ' ;
     margin-left: -30px;
@@ -73,21 +106,60 @@ ul.books {
     margin-left: -25px;
 }
 
-#contacts {
-    display: flex; 
-    justify-content: space-between;  
-    margin: 25px;
-}
+@media only screen and (max-width: 650px) {
 
-.message, .social {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-#contacts img {
-    transition: transform 0.2s ease-out;
-}
-#contacts img:hover {
-    transform: scale(1.5);
-    
+    body {
+        position: static;
+        display: block;
+        width: 80%;
+        margin:auto 10px;
+    }
+    header {
+          position: static;
+          margin: 15px auto;
+          text-align: center;
+    }
+    main {
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    #btn-style {
+        font-size: 8px;
+        border-radius: 5px;
+        padding: 2px;
+        box-shadow: none;
+    }
+    #avatar {
+        width: 80%;
+        max-width: auto;
+        max-height: 300px;
+        margin: 0 auto;
+    }
+    #avatar img {
+        height: auto;
+        max-height: 100%;
+    }
+
+    #contacts {
+        display: block;
+        justify-items: center;
+        border: solid 1px whitesmoke;
+        border-radius: 15px;
+    }
+    #contacts img {
+        width: 60%;
+        height: auto;
+    }
+    .message span {
+        display: none;
+    }
+    .message, .social {
+        display: flex;
+        justify-content: center;
+    }
 }

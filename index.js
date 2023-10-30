@@ -16,7 +16,6 @@ function changeStyle () {
     if (!whiteMode) {
         document.body.style.backgroundImage = 'url(images/whiteback.jpg)';
         document.getElementById('contacts').style.backgroundColor = 'black';
-        document.getElementById('contacts').style.padding = '10px';
         document.getElementById('contacts').style.borderRadius = '15px';
         document.getElementById('btn-style').style.backgroundColor = 'black';
         document.getElementById('btn-style').style.color = 'white';
@@ -40,11 +39,10 @@ function changeStyle () {
             el.style.fontWeight = 'bold';
         });
 
-        whiteMode = true;
+        whiteMode = true;       
     } else {
         document.body.style.backgroundImage = '';
         document.getElementById('contacts').style.backgroundColor = '';
-        document.getElementById('contacts').style.padding = '';
         document.getElementById('contacts').style.borderRadius = '';
         document.getElementById('btn-style').style.backgroundColor = '';
         document.getElementById('btn-style').style.color = '';
