@@ -1,7 +1,7 @@
 /* base */
 
 body {
-    position: relative;
+    
     background-color: black;
     font-family: 'Inter', sans-serif;
     color: rgb(234, 224, 224);
@@ -24,8 +24,8 @@ a {
 
 header {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 50px;
+    top: 50px;
 }
 
 main {
@@ -109,8 +109,6 @@ ul.books {
 @media only screen and (max-width: 650px) {
 
     body {
-        position: static;
-        display: block;
         width: 80%;
         margin:auto 10px;
     }
