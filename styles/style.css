@@ -105,7 +105,7 @@ ul.books {
     margin-left: -25px;
 }
 
-@media only screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
 
     body {
         margin:auto 10px;
