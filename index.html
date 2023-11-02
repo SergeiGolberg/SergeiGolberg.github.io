@@ -1,80 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Sergei Golberg</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="styles/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <button id="btn-style">Change the style</button>
-        </header>
-        <main>            
-            <div id="avatar">
-                 <img src="images/mainphoto1.png" id="avatar-img" alt="avatar">
-            </div>
-            <div id="aboutme">
-                <h1>SERGEI GOLBERG</h1>
-                <p>
-                    Hi! my name is Sergei, I'm Frontend Developer.<br>
-                    Here is some information about myself:
-                    <ul class="me">
-                        <li id="age"></li>
-                        <li>Born: Kaliningrad, Russia;</li>
-                        <li>Now I live: Tbilisi, Georgia;</li>
-                        <li>Languages:
-                            <ul class="lang">
-                                <li> Russian: Native;</li>
-                                <li> English: B1.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </p>
-                <h2>Education</h2>
-                <p>
-                    I started learning code using books <a href="https://wickedlysmart.com/books/" target="_blank">wickedlysmart:</a>
-                    <ul class="books">
-                        <li>Head First HTML & CSS;</li>
-                        <li>Head First JavaScript Programming;</li>
-                    </ul>
-                </p>
-                <p>
-                    I also use the <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> to learn more about code.<br>
-                    I have obtained several certificates from completing courses on this platform.
-                </p>
-            </div>
-        </main>
-        <div id="contacts">
-            <div class="message">
-                <span>you can write me:</span>
-                <a href="mailto:golberg.sergei@gmail.com" target="_blank">
-                    <img src='/images/icons/icons8-почта-48.png'>
-                </a>
-                <a href="https://t.me/SergeiGolberg" target="_blank">
-                    <img src='/images/icons/icons8-телеграмма-60.png'>
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.instagram.com/serega_golberg/" target="_blank">
-                    <img src='/images/icons/icons8-instagram-50.png' alt="instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/sergei-golberg-83ab1a258/" target="_blank">
-                    <img src='/images/icons/icons8-линкедин-50.png' alt="linkedin">
-                </a>
-                <a href="https://github.com/SergeiGolberg" target="_blank">
-                    <img src='/images/icons/icons8-github-50.png' alt="GitHub" >
-                </a>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#home"></a>Home</li>
+                    <li><a href="aboutme"></a>About Me</li>
+                    <li><a href="skills"></a>Skills</li>
+                    <li><a href="projects"></a>Projects</li>
+                    <li><a href="contacts"></a>Contacts</li>
+                </ul>
+            </nav>
         </div>
+        <div>
+            <p>
+                <a href="#footer">Setting</a>
+            </p>
+        </div>
+    </header>
+    <main>
 
-        <script src="index.js"></script>
-    </body>
-    </html>
+        <section id="home">
+            <div class="img-container main-photo">
+                <img src="" alt="">
+            </div>
+            <div>
+                <h1>FRONTEND DEVELOPER</h1>
+                <h2>Sergei Golberg</h2>
+                <p id="age"></p>
+            </div>
+        </section>
+
+        <section id="aboutme">
+            <div>
+                <h2>About Me</h2>
+            </div>
+            <div>
+                <p>Hi! My name is Sergei, I'm a Frontend developer. </p>
+                <p>
+                    I was born in Kaliningrad, Russia. I studied to be a cook. 
+                    I worked in restaurants for a long time, held different positions and 
+                    learned about the characteristics of different cuisines around the world.
+                </p>
+                <p>In 2015 I moved to St. Petersburg. I received additional education and worked as a chef.</p>
+                <p>I got married in 2021.</p>
+                <p>In 2022, my family and I moved to Tbilisi, Georgia. It was here that I first tried writing code and realized how much I loved it!</p>
+                <p>Now I still live in Tbilisi.</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p>fun fact about me: I haven't eaten meat since I was 19!</p> <!--факты меняются вместе с прокруткой фотки в этом же <div>-->
+            </div>
+            <div>
+                <ul>
+                    <span>My hobbies:</span>
+                    <li>Football;</li>
+                    <li>Music;</li>
+                    <li>Video Games;</li>
+                    <li>Animals;</li>
+                    <li>Veganism.</li> <!-- веганство можно отнести к хобби, как думаешь?) -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div>
+                <h2>Skills</h2>
+            </div>
+            <div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+                <div>
+                    <img src="" alt=""><span></span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div>
+                <h2></h2>
+            </div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div></div>
+            </div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div></div>
+            </div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div></div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div>
+                <h2></h2>
+            </div>
+            <div>
+                <img src="" alt="">
+                <a href=""><img src="" alt=""></a>
+                <p></p>
+            </div>
+            <div>
+                <div>
+                    <p></p>
+                    <p>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                    </p>
+                </div>
+                <div>
+                    <p></p>
+                    <p>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div><button></button></div>
+            <div><button></button></div>
+            <div><button></button></div>
+        </div>
+        <div><p></p></div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -6,7 +6,6 @@ function calculateAge() {
     const age = today.getFullYear() - birthday.getFullYear();
     document.getElementById('age').innerHTML = `Age: ${age};`
 };
-
 calculateAge();
 
 // смена стиля
@@ -59,3 +58,4 @@ function changeStyle () {
 }
 
 document.getElementById('btn-style').addEventListener('click', changeStyle);
+
