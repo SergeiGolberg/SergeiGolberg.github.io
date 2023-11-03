@@ -1,162 +1,244 @@
-/* base */
-
 body {
-    background-color: black;
-    font-family: 'Inter', sans-serif;
-    color: rgb(234, 224, 224);
-    max-width: 1200px;
-    margin: 50px auto;
+    background: linear-gradient(90deg, #ece6e6, rgb(38, 37, 37));
+    font-size: 1.3rem;
 }
 
-h1, h2, h3 {
-    color: rgb(255, 255, 255);;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+/* basic */
+
+section {
+    padding-top: 30px;
 }
 
-a {
-    color: rgb(163, 163, 241);
-    text-decoration: none;
+h2 {
+    text-align: center;
+    text-transform: uppercase;
 }
 
-/* section */
+.photo-container {
+    width: 35%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.photo-wrapper {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* header */
 
 header {
-    position: absolute;
-    right: 50px;
-    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    left: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    top: 0;
+    font-size: 1rem;
+    z-index: 2;
 }
+
+nav a {
+    margin: 10px;
+}
+
+/* main */
 
 main {
-    display: flex; 
-    width: 100%;
-    justify-content: center; 
-    align-items: center;
+    padding-top: 10px;
 }
 
-#aboutme {   
-    padding-left: 50px;
-}
+/* home */
 
-.message, .social {
+#home {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 50px;
+    line-height: 30%;
 }
 
+#home h1,
+h2 {
+    font-size: 3rem;
+}
 
- /* other */ 
+#home span {
+    text-align: right;
+    font-size: 2rem;
+    font-style: italic;
+}
 
-#btn-style {
-    font-size: 12px;
+/* About me */
+
+.text-container {
+    width: 30%;
+}
+
+#funfacts {
     font-weight: bold;
-    background-color: rgb(163, 163, 241);
-    padding: 8px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px rgb(163, 163, 241);
 }
 
-#btn-style:hover {
-    background-color: rgb(103, 103, 100);
-    box-shadow: 5px 5px 5px rgb(103, 103, 100);
-    transition: all 0.2s ease-out;
+.hobbies {
+    align-self: center;
+
 }
 
-#avatar {
-    width: 600px;
-    height: 600px;
+.hobbies span {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.hobbies-list {
+    margin-top: 3px;
+}
+
+/* skills */
+
+#skills {
+    text-align: center;
+}
+
+.icons-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin: 80px;
+}
+
+.icon {
     display: flex;
-    align-items: flex-end;
-    border-bottom: solid 1px rgb(103, 103, 100);
-    border-left: solid 1px rgb(103, 103, 100);
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    transition: transform 1s;
+
 }
 
-#avatar img {
-    height: auto;
-    max-height: 100%;
+.icon img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 0.5rem;
+
 }
 
-#contacts {
-    display: flex; 
-    justify-content: space-between;  
-    margin: 25px;
-    padding: 10px;
+.icons-container .icon:nth-child(odd) {
+    transform: translateY(3rem);
 }
 
-#contacts img {
-    transition: transform 0.2s ease-out;
+.icons-container .icon:nth-child(even) {
+    transform: translateY(-3rem);
 }
 
-#contacts img:hover {
-    transform: scale(1.5);
+.icons-container .icon:hover {
+    transform: translateY(0);
 }
 
-/* lists 
-*/
-ul.me {
-    list-style-type: '- ' ;
-    margin-left: -30px;
-}
-ul.lang {
-    list-style: '* ';
-    margin-left: -25px;
-}
-ul.books {
-    margin-left: -25px;
+.languages {
+    text-align: left;
+
 }
 
-@media screen and (max-width: 800px) {
+/* projects */
 
-    body {
-        margin:auto 10px;
-    }
-    header {
-          position: static;
-          margin: 15px auto;
-          text-align: center;
-    }
-    main {
-        display: block;
-        margin: 0 auto;
-    }
+/* contacts */
 
-    h1, h2, h3 {
-        text-align: center;
-    }
+.link-github {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+}
 
-    #btn-style {
-        font-size: 8px;
-        border-radius: 5px;
-        padding: 2px;
-        box-shadow: none;
-    }
-    #avatar {
-        width: 60%;
-        max-width: auto;
-        max-height: 300px;
-        margin: 0 auto;
-    }
-    #avatar img {
-        width: 100%;
-        height: auto;
-        
-    }
+.link-github img {
+    height: 60px;
+    transition: 0.3s;
+    opacity: 0.5;
+}
 
-    #contacts {
-        display: block;
-        justify-items: center;
-        border: solid 1px whitesmoke;
-        border-radius: 15px;
-    }
-    #contacts img {
-        width: 60%;
-        height: auto;
-    }
-    .message span {
-        display: none;
-    }
-    .message, .social {
-        display: flex;
-        justify-content: center;
-    }
+.link-github:hover img:hover {
+    transform: scale(1.2);
+    color: blue;
+    opacity: 1;
+}
+
+.block-wrapper p {
+    color: white;
+    cursor: pointer;
+}
+
+.line {
+    width: 12rem;
+    height: 0.1rem;
+    position: relative;
+}
+
+.line::before {
+    position: absolute;
+    content: ' ';
+    width: 4rem;
+    height: 0.1rem;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.block-wrapper:hover .line::before {
+    width: 100%;
+}
+
+.icon-contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icon-contact a {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.icon-contact a:hover {
+    transform: scale(1.2);
+    color: blue;
+    opacity: 1;
+}
+
+.icon-contact img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+#lookingforajob {
+    text-align: center;
+}
+
+
+/* footer */
+
+footer p {
+    text-align: center;
 }
