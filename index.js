@@ -4,7 +4,7 @@ function calculateAge() {
     const birthday = new Date(1989, 1, 15);
 
     const age = today.getFullYear() - birthday.getFullYear();
-    document.getElementById('age').innerHTML = `${age} years old;`
+    document.getElementById('age').innerHTML = `${age} years old`
 };
 calculateAge();
 

@@ -1,230 +1,217 @@
+/* roots */
+
+            /* BASIC RULES */
+
 body {
     background: linear-gradient(90deg, #ece6e6, rgb(38, 37, 37));
-    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
 }
-
-/* basic */
-
-section {
-    padding-top: 30px;
-}
-
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.photo-container {
-    width: 35%;
-    max-height: 600px;
-    overflow: hidden;
-}
-.photo-wrapper {
-    max-height: 500px;
-    overflow: hidden;
-}
-.photo-container img {
-    width: 100%;
-    height: auto;
-}   
-
-.flex-container  {
-    display: flex;
-    justify-content: space-around;
-}
-.flex-column {
-    flex-direction: column;
-}
-/* header */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    right: 20px;
-    left: 20px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    top: 0;
-    font-size: 1rem;
-    z-index: 2;
-}
-
-nav a {
-    margin: 10px;
-}
-
-/* main */
-
 main {
-    padding-top: 10px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
 }
-
-/* home */
-
-#home {
+section {
+    padding-top: 10px; 
+    height: 45vw; /* ??? */
+    display: grid; /* ??? */
+    
+} 
+h1, h2, h3 {
+    text-align: center;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.flex-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    line-height: 30%;
+    align-items: center;    
+}
+.photo-container {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 8px 5px 5px 2px;
 }
 
-#home h1, h2 {
-    font-size: 3rem;
+
+/* img and icons*/
+img {
+    width: 100%;
 }
-#home span {
-    text-align: right;
-    font-size: 2rem;
+.icon {
+    width: 96px; 
+}
+
+/* links and lists */
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+
+
+            /* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    background-color: whitesmoke;
+    font-size: small;
+    width: 100%;
+    height: 30px;
+}
+
+.navbar  {
+    display: flex;
+    justify-content: space-around;
     font-style: italic;
+    margin-top: 8px;
 }
 
-/* About me */
 
-.text-container {
-    width: 30%;
+            /* HOME PAGE */
+
+
+#home p {
+    text-align: center;
+    font-weight: 600;
 }
 
-#funfucts {
-    font-weight: bold;
+            /* aABOUT ME */
+
+#about-me .text-container {
+    max-width: 500px;
+    width: 100%;
 }
+.photo-and-text-wrapper {
+    text-align: center;
+    margin: 0 30px;
+}
+#funFacts {
+    margin: 5px;
+}
+
 
 .hobbies {
-    align-self: center;
-    
+    background-color: rgb(78, 76, 76);
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 0 30px;
+    box-shadow: 5px 5px 5px;
 }
 
-.hobbies span {
-    text-transform: uppercase;
-    text-decoration: underline;
-}
 
-.hobbies-list  {
-    margin-top: 3px;
-}
+            /* SKILLS */    
 
-/* skills */
-
-#skills {
+.skills-content {
     text-align: center;
 }
 
-.icons-container {
-    display: inline-flex;
+.skills-icons {
     flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-    margin: 80px;
+    margin: 30px; 
+}
+.skill {
+    padding: 10px;
+    margin: 30px;
+    display: block;
+}
+.skill p{
+    margin: 0;
+    font-size: small;
 }
 
-.icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    transition: transform 1s; 
+.lang-container {
+    text-align: left;
+    margin: 0 30px;
+}
+.lang-container h3{
+    text-align: left;
     
 }
-.icon img {
-    height: 60px;
-    width: auto;
-    margin-bottom: 0.5rem;
-    
+.languages {
+    padding:0 5px 5px 5px ;
+}
+            /* PROJECTS */
+            
+
+            /* CONTACTS */
+#contacts h3 {
+    margin-bottom: 10px;
 }
 
-.icons-container .icon:nth-child(odd){
-    transform: translateY(3rem);
-}
-
-.icons-container .icon:nth-child(even) {
-    transform: translateY(-3rem);
-}
-.icons-container .icon:hover {
-    transform: translateY(0);
-}
-
-.langueges {
+.contacts-block {
+    align-items: center;
+    margin: 10px auto;
+    font-size: 1rem;
+    justify-content: left;
+}           
+.contacts-block h3 {
+    width: 120px;
     text-align: left;
 
 }
-
-/* projects */
-
-/* contacts */
-
-.link-github {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 10px auto;
-}
-.link-github img{
-    height: 60px;
-    transition: 0.3s;
-    opacity: 0.5;
-}
-.link-github:hover img:hover {
-    transform: scale(1.2);
-    color: blue;
-    opacity: 1;
-}
-
-.block-wrapper p{
-    color: white;
-    cursor: pointer;
-}
-
-.line {
-    width: 12rem;
-    height: 0.1rem;
-    position: relative;
-}
-.line::before {
-    position: absolute;
-    content: ' ';
-    width: 4rem;
-    height: 0.1rem;
-    background-color: white;
+.contacts-block-links li{
+    padding: 1.5rem;
     transition: 0.5s;
-}
-.block-wrapper:hover .line::before {
-    width: 100%;
-}
-
-.icon-contact {
-    display: flex;
-    flex-direction: column; 
     
 }
-.icon-contact a{
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-    opacity: 0.5;
+#contacts .icon {
+    width: 56px;
+    padding: 2px;
 }
-.icon-contact a:hover {
-    transform: scale(1.2);
-    color: blue;
+
+/* animation for contant's links */
+
+.contacts-block-links li:nth-child(even) {
+    transform: translateY(-3rem);
+    opacity: 0;
+}
+.contacts-block-links li:nth-child(odd) {
+    transform: translateY(3rem);
+    opacity: 0;
+}
+.contacts-block:hover li {
+    transform: translateY(0);
+    opacity: 0.3; 
+}
+.contacts-block li:hover {
     opacity: 1;
+    
+}
+.github-link li:nth-child(odd) {
+    transform: translateY(0);
+    transform: translateX(6rem);
+}
+.github-link:hover li {
+    transform: translateX(0);
 }
 
-.icon-contact img {
-    height: 50px;
-    margin-right: 10px;
+/* animation for white line */
+
+.line {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: white;
+    margin-left: 5px;
+    transition: 0.5s;
+    transform-origin: left;
+    
+}
+.contacts-block:hover .line{
+    transform: scaleX(2.5);
 }
 
 
-#lookingforajob {
-    text-align: center;
-}
-
-
-/* footer */
+            /* FOOTER */
 
 footer p {
     text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
 }

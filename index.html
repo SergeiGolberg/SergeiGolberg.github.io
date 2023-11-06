@@ -1,116 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    
+
     <header>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#aboutme">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#">Setting</a></li>
+            </ul>
         </nav>
-        <a href="#footer">Setting</a>       
     </header>
-    <main>
 
+
+    <main>
         <section id="home">
-            <div class="photo-container">
-                <img src="/images/main.jpg" alt=""> <!-- основное фото -->
-            </div>
-            <div class>
-                <h1>FRONTEND DEVELOPER</h1>
-                <h2>Sergei Golberg</h2>
-                <span id="age"></span>
+            <div class="flex-container home-content">
+                <div class="photo-container">
+                    <img src="/images/main.jpg" alt="my photo">
+                </div>
+                <div class="text-container">
+                    <h1>FRONTEND DEVELOPER</h1>
+                    <h2>SERGEI GOLBERG</h2>
+                    <p id="age"></p>
+                </div>
             </div>
         </section>
 
-        <section id="aboutme">
-            <h2>About Me</h2>
-            <div class="flex-container">
+        <section id="about-me">
+            <h2>ABOUT ME</h2>
+            <div class="flex-container about-me-content">
                 <div class="text-container">
                     <p>Hi! My name is Sergei, I'm a Frontend developer. </p>
                     <p>
-                        I was born in Kaliningrad, Russia. I studied to be a cook. 
-                        I worked in restaurants for a long time, held different positions and 
+                        I was born in Kaliningrad, Russia. I studied to be a cook.
+                        I worked in restaurants for a long time, held different positions and
                         learned about the characteristics of different cuisines around the world.
                     </p>
                     <p>In 2015 I moved to St. Petersburg. I received additional education and worked as a chef.</p>
                     <p>I got married in 2021.</p>
-                    <p>In 2022, my family and I moved to Tbilisi, Georgia. It was here that I first tried writing code and realized how much I loved it!</p>
+                    <p>In 2022, my family and I moved to Tbilisi, Georgia. It was here that I first tried writing code
+                        and realized how much I loved it!</p>
                     <p>Now I still live in Tbilisi.</p>
                 </div>
-                <div class="photo-container">
-                    <div class="photo-wrapper">
-                        <img src="/images/aboutme-01.jpg" alt=""> <!--карусель фото "aboutme"-->
+                <div class="photo-and-text-wrapper">
+                    <div class="photo-container">
+                        <img src="/images/aboutme-01.jpg" alt="my photo"> <!--карусель фото "aboutme"-->
                     </div>
-                    <span id="funfucts">Fun fact about me: I haven't eaten meat since I was 19!</span> <!--факты меняются вместе с прокруткой фотки в этом же <div>-->
+                    <p id="funFacts">Fun fact about me: I haven't eaten meat since I was 19!</p>
                 </div>
                 <div class="hobbies">
-                    <span>My hobbies:</span>
+                    <h3>My hobbies:</h3>
                     <ul class="hobbies-list">
-                        <li>Football;</li>
-                        <li>Music;</li>
-                        <li>Video Games;</li>
-                        <li>Animals;</li>
-                        <li>Veganism.</li> <!-- веганство можно отнести к хобби, как думаешь?) -->
+                        <li>Football</li>
+                        <li>Music</li>
+                        <li>Video Games</li>
+                        <li>Animals</li>
+                        <li>Veganism</li>
                     </ul>
                 </div>
-        </div>
+            </div>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
-            <div class="icons-container">
-                <div class="icon">
-                    <img src="/images/icons/i-html5.png" alt=""><span>HTML</span> <!-- иконка стэка + название -->
+            <h2>SKILLS</h2>
+            <div class="skills-content">
+                <div class="flex-container skills-icons">
+                    <div class="skill">
+                        <img src="/images/icons/html.svg" alt="html5 icon" class="icon">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/icons/css.svg" alt="css icon" class="icon">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/icons/javascript-2.svg" alt="js icon" class="icon">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/icons/typescript.svg" alt="ts icon" class="icon">
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/icons/react.svg" alt="react icon" class="icon">
+                        <p>React</p>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/icons/git.svg" alt="git icon" class="icon">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/icons/terminal.svg" alt="terminal icon" class="icon">
+                        <p>Terminal</p>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/icons/github.svg" alt="github icon" class="icon">
+                        <p>Github</p>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/icons/google-sheets.svg" alt="google-sheets icon" class="icon">
+                        <p>Sheets</p>
+                    </div>
                 </div>
-                <div class="icon">
-                    <img src="/images/icons/i-css.png" alt=""><span>CSS</span>
-                </div>
-                <div class="icon">
-                    <img src="/images/icons/i-javascript.png" alt=""><span>JavaScript</span>
-                </div>
-                <div class="icon">
-                    <img src="/images/icons/i-typescript.png" alt=""><span>TypeScript</span>
-                </div>
-                <div class="icon">
-                    <img src="/images/icons/i-react.png" alt=""><span>React</span>
-                </div>
-                <div class="icon">
-                    <img src="/images/icons/i-git-black.png" alt=""><span>Git</span>
-                </div>
-                <div class="icon">
-                    <img src="/images/icons/I-terminal.png" alt=""><span>Terminal</span>
-                </div>
-                <div class="icon">
-                    <img src="/images/icons/i-github.png" alt=""><span>Github</span>
-                </div>
-                <div class="icon">
-                    <img src="/images/icons/i-googlesheets.png" alt=""><span>Google sheets</span>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div class="langueges">
-                    <span>Langueges:</span>
-                    <ul>
-                        <li>Russian: fluent;</li>
+                <div class="lang-container">
+                    <h3>Languages:</h3>
+                    <ul class="languages">
+                        <li>Russian: fluent</li>
                         <li>English: B1 (studying).</li>
                     </ul>
-                </div>     
-                <div> Empty </div> <!-- обертка для отображения с гитхаба процентного соотношения используевого стека -->   
-            </div>      
-            </section>
+                </div>
+            </div>
+        </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            
+            <h2>PROJECTS</h2>
+
             <div> <!-- обертка проекта номер 1 -->
                 <div> <!-- контейнер для скришота и иконки -->
                     <img src="" alt=""> <!--скриншот проекта-->
@@ -123,70 +139,92 @@
             </div>
             <div> <!-- обертка проекта номер 2 -->
                 <div>
-                    <img src="" alt=""> 
+                    <img src="" alt="">
                     <div>
                         <img src="" alt="">
-                        <img src="" alt=""> 
+                        <img src="" alt="">
                     </div>
                 </div>
-                <p></p> 
+                <p></p>
             </div>
             <div> <!-- обертка проекта номер 3 -->
                 <div>
-                    <img src="" alt=""> 
+                    <img src="" alt="">
                     <div>
-                        <img src="" alt=""> 
+                        <img src="" alt="">
                         <img src="" alt="">
                     </div>
                 </div>
-                <p></p> 
+                <p></p>
             </div>
         </section>
 
         <section id="contacts">
-            <h2>Contacts</h2>
-            <div class="flex-container">
-                <div class="photo-container">
-                    <div class="photo-wrapper">
-                        <img src="/images/contacts-pic01.JPG" alt=""> 
+            <h2>CONTACTS</h2>
+            <h3>
+                Currently, I'm looking for my first full-time team
+                and am also open to freelance tasks.
+            </h3>
+            <div class="flex-container contacts-content">
+            
+                <div class="contacts-content-links">
+                    <!--contacnts -->
+                    <div class="flex-container contacts-block">
+                        <h3>Contact</h3>
+                        <p class="line"></p>                   
+                        <ul class="flex-container contacts-block-links">
+                            <li><a href="mailto:golberg.sergei@gmail.com" target="_blank">
+                                    <img src="/images/icons/contacts/gmail.svg" alt="gmail icon"
+                                        class="icon"></a>
+                            </li>
+                            <li><a href="https://t.me/SergeiGolberg" target="_blank">
+                                    <img src="/images/icons/contacts/telegram.svg" alt="telegram icon"
+                                        class="icon"></a>
+                            </li>
+                            <li><a href="https://wa.me/995599802163" target="_blank">
+                                    <img src="/images/icons/contacts/whatsapp.svg" alt="whatsapp icon"
+                                        class="icon"></a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="icon-contact link-github">
-                        <a href=""><img src="/images/icons/i-github-with-text.png" alt=""></a> 
+                    <!--social network -->
+                    <div class="flex-container contacts-block">
+                        <h3>Social</h3>
+                        <p class="line"></p>
+                        <ul class="flex-container contacts-block-links">
+                            <li><a href="https://www.instagram.com/serega_golberg/" target="_blank">
+                                    <img src="/images/icons/contacts/instagram.svg" alt="instagram icon"
+                                        class="icon"></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100086604436569" target="_blank">
+                                    <img src="/images/icons/contacts/facebook.svg" alt="facebook icon"
+                                        class="icon"></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/sergei-golberg-83ab1a258/" target="_blank">
+                                    <img src="/images/icons/contacts/linkedin.svg" alt="linkedin icon"
+                                        class="icon"></a>
+                            </li>
+                        </ul>   
+                    </div>
+                    <!--GitHub -->
+                    <div class="flex-container contacts-block github-link">
+                        <h3>GitHub</h3>
+                        <p class="line"></p>
+                        <ul class="flex-container contacts-block-links ">
+                            <li><a href="https://github.com/SergeiGolberg" target="_blank">
+                                    <img src="/images/icons/github.svg" alt="github icon"
+                                        class="icon"></a>
+                            </li>
+                        </ul>   
                     </div>
                 </div>
-                
-                <div class="flex-container flex-column">
-                    <div class="block-wrapper flex-column"> 
-                        <div>
-                            <p>Contact me:</p>
-                            <p class="line"></p>
-                        </div>
-                        <div class="icon-contact">
-                            <a href=""><img src="/images/icons/contacts/i-gmail-color.png" alt="">Mail</a> <!-- иконка с почтой -->
-                            <a href=""><img src="/images/icons/contacts/i-telegram-color.png" alt="">Telegramm</a> <!-- иконка с телегой -->
-                            <a href=""><img src="/images/icons/contacts/i-whatsup-color.png" alt="">Whats Up</a> <!-- иконка с ватсапом -->
-                        </div>
-                    </div>
-                    <div class="block-wrapper">
-                        <div>
-                            <p>Social Network:</p>
-                            <p class="line"></p>
-                        </div>
-                        <div class="icon-contact">
-                            <a href=""><img src="/images/icons/contacts/i-instagram-color.png" alt="">Instagramm</a> <!-- иконка с инстой -->
-                            <a href=""><img src="/images/icons/contacts/i-facebook-color.png" alt="">Facebook</a> <!-- иконка с фейсбуком -->
-                            <a href=""><img src="/images/icons/contacts/i-linkedin-color.png" alt="">LinkedIn</a> <!-- иконка с линком -->
-                        </div>
-                    </div>
+                <div class="photo-container">
+                    <img src="/images/contacts-pic01.JPG" alt="my photo">
                 </div>
             </div>
-            <p id="lookingforajob">
-                Currently, I'm looking for my first full-time team 
-                and am also open to freelance tasks.
-            </p> 
         </section>
     </main>
-    <footer id="footer">
+    <footer>
         <div>
             <div><button></button></div> <!-- кнопка смены языка -->
             <div><button></button></div> <!-- кнопка смены стиля-->
@@ -194,7 +232,6 @@
         </div>
         <p>2023 by Sergei Golberg</p>
     </footer>
-
     <script src="index.js"></script>
 </body>
 </html>
