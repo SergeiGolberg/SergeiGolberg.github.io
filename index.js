@@ -1,3 +1,9 @@
+import dataConfig from "./data/dataConfig.js";
+
+const { menu } = dataConfig();
+const menuBar = document.querySelector('.top-menu');
+menuBar.innerHTML = menu.map(item => `<a href="#${item.link}">${item.name}</a>`).join('');
+
 // функция добавляющая актуальный возраст на страницу
 function calculateAge() {
     const today = new Date();
@@ -11,7 +17,7 @@ calculateAge();
 // смена стиля
 let whiteMode = false;
 
-function changeStyle () {
+function changeStyle() {
     if (!whiteMode) {
         document.body.style.backgroundImage = 'url(images/whiteback.jpg)';
         document.getElementById('contacts').style.backgroundColor = 'black';
@@ -19,7 +25,7 @@ function changeStyle () {
         document.getElementById('btn-style').style.backgroundColor = 'black';
         document.getElementById('btn-style').style.color = 'white';
         document.getElementById('btn-style').style.boxShadow = '5px 5px 5px darkblue'
-        
+
 
         const elementsHead = document.querySelectorAll('h1, h2, h3');
         elementsHead.forEach(el => {
@@ -38,7 +44,7 @@ function changeStyle () {
             el.style.fontWeight = 'bold';
         });
 
-        whiteMode = true;       
+        whiteMode = true;
     } else {
         document.body.style.backgroundImage = '';
         document.getElementById('contacts').style.backgroundColor = '';
@@ -57,5 +63,5 @@ function changeStyle () {
     }
 }
 
-document.getElementById('btn-style').addEventListener('click', changeStyle);
+// document.getElementById('btn-style').addEventListener('click', changeStyle);
 
