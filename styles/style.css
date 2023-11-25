@@ -16,7 +16,7 @@ main {
 section {
     padding-top: 10px; 
     padding-bottom: 80px;
-    height: 42vw; 
+    
     display: grid;  
 } 
 
@@ -116,6 +116,10 @@ header {
     border-radius: 10px;
     padding: 0 30px;
     box-shadow: 5px 5px 5px;
+} 
+.hobbies-smallscreen {
+    display: none;
+    
 }
 
 
@@ -162,6 +166,9 @@ header {
 }
 
             /* PROJECTS */
+.project-content {
+    margin-top: 50px;
+}
 .project {
     color: #ece6e6;
     width: 400px;
@@ -288,3 +295,94 @@ footer p {
     font-weight: bold;
 }
 
+@media screen and (max-width: 1250px) {
+    .section {
+        height: auto;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .photo-container {
+        width: 400px;
+        height: 400px;
+    }
+    .text-container {
+        font-size: smaller;
+        font-weight: bolder;
+    }
+}
+@media screen and (max-width: 1100px) {
+    main {
+        max-width: 900px;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .hobbies {
+        display: none;
+    }
+    .hobbies-smallscreen {
+        display: flex;
+        justify-content: space-around;
+    }
+    .project {
+        max-width: 300px;
+        max-height: 220px;
+    }
+    .project-photo {
+        width: 100%;
+    }
+    .project:hover .overlay {
+        opacity: 1;
+        margin-top: -190px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about-me-content {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .photo-container {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .photo-and-text-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .hobbies-smallscreen {
+        display: none;
+    }
+    .icon {
+        width: 46px;
+    }
+    .lang-container {
+        margin-top: -50px;
+    }
+    .project {
+        max-width: 200px;
+        max-height: 150px;
+        
+    }
+    .project-photo {
+        margin-top: -50px;
+    }
+    .overlay {
+        opacity: 1;
+        margin-top: -160px;
+    }
+    .project:hover .project-photo{
+        transform: none;
+        margin-top: -50px;
+    }
+    .project:hover .overlay {
+        margin-top: -160px;  
+    }
+}
