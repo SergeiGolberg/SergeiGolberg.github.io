@@ -3,7 +3,7 @@
             /* BASIC RULES */
 
 body {
-    background: linear-gradient(90deg, rgb(38, 37, 37), #ece6e6, rgb(38, 37, 37));
+    background: linear-gradient(90deg, rgb(92, 91, 91), #acaaaa, rgb(86, 85, 85));
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
 }
@@ -68,6 +68,7 @@ li {
 header {
     position: fixed;
     top: 0;
+    left: 0;
     background-color: whitesmoke;
     font-size: small;
     width: 100%;
@@ -91,6 +92,10 @@ header {
 }
 
             /* ABOUT ME */
+
+#about-me {
+    
+}
 
 #about-me .text-container {
     max-width: 500px;
@@ -122,7 +127,8 @@ header {
 
 .skills-icons {
     flex-wrap: wrap;
-    margin: 30px; 
+    justify-content: center;
+    margin-bottom: 50px;
 }
 .skill {
     padding: 10px;
@@ -140,7 +146,7 @@ header {
     width: 200px;
     margin: auto;
     text-align: left;
-    background-color: rgb(96, 94, 94);
+    background-color: rgb(154, 154, 154);
     border: solid 1px black;
     border-radius: 10px;
     padding: 0 30px;
@@ -159,6 +165,7 @@ header {
 .project {
     color: #ece6e6;
     width: 400px;
+    height: 300px;
     border: 1px solid rgb(135, 135, 135);
     border-radius: 20px;
     background-color: rgb(78, 76, 76);
@@ -185,17 +192,15 @@ header {
 }
 
 .overlay {
-    margin-top: -350px;
+    margin-top: -300px;
     opacity: 0;
     transition: all 0.5s ease;
     
 }
-.project:hover .project {
-    height: 400px;
-}
+
 .project:hover .overlay {
     opacity: 1;
-    margin-top: -210px;
+    margin-top: -220px;
 }
 .project:hover .project-photo {
     margin-top: -100px;
