@@ -337,10 +337,31 @@ footer p {
 }
 
 @media screen and (max-width: 700px) {
+    header {
+        display: none;
+    }
     main {
         width: 100%;
         margin: 0 10px;
     }
+
+    section {
+        padding: auto;
+    }
+
+    .home-content {
+        display: block;
+        align-items: center;
+        /* margin: 0 auto; */
+        letter-spacing: 3px;
+        line-height: 3px;
+    }
+
+    .home-content .photo-container {
+        margin: 0 auto;
+    
+    }
+    
     .about-me-content {
         display: block;
         text-align: center;
@@ -365,7 +386,7 @@ footer p {
         margin-top: -50px;
     }
     .project {
-        max-width: 200px;
+        max-width: 180px;
         max-height: 150px;
         
     }
