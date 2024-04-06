@@ -385,4 +385,44 @@ footer p {
     .project:hover .overlay {
         margin-top: -160px;  
     }
+    #contacts .photo-container {
+        display: none;
+    }
+    #about-me .photo-container {
+        display: none;
+    }
+    #funFacts {
+        font-size: small;
+        font-style: italic;
+        font-weight: bolder;
+        color: rgb(8, 9, 9);
+        margin: 0 auto;
+    }
+    .skill {
+        padding: 10px;
+        margin: 10px;
+    }
+    .project-description {
+        font-size: 70%;
+        margin: 15px;
+    } 
+    .contacts-block {
+        display: block;
+    }
+    .line {
+        width: 100%;
+
+    }
+    .contacts-block:hover .line{
+        transform: none;
+    }
+    
+    .contacts-block-links li:nth-child(even) {
+        transform: none;
+        opacity: 0.8;
+    }
+    .contacts-block-links li:nth-child(odd) {
+        transform: none;
+        opacity: 0.8;
+    }
 }
