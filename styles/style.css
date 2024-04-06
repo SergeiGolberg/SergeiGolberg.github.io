@@ -3,7 +3,7 @@
             /* BASIC RULES */
 
 body {
-    background: linear-gradient(90deg, rgb(92, 91, 91), #acaaaa, rgb(86, 85, 85));
+    background: linear-gradient(90deg, rgb(92, 91, 91), #828080, rgb(92, 91, 91));
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
 }
@@ -15,8 +15,7 @@ main {
 }
 section {
     padding-top: 10px; 
-    padding-bottom: 80px;
-    
+    padding-bottom: 80px;    
     display: grid;  
 } 
 
@@ -339,9 +338,8 @@ footer p {
 
 @media screen and (max-width: 700px) {
     main {
-        max-width: 600px;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 10px;
     }
     .about-me-content {
         display: block;
